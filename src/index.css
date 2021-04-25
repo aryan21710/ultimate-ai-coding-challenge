@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1.3vw;
+}
+
+.ag-theme-alpine .ag-row {
+width: 100vw !important;
+color: white !important;
+background: transparent;
+}
+
+.ag-theme-alpine [class^='ag-'] {
+background: rgba(0, 0, 0, 0.1) !important;
+color: white !important;
+}
+
+label {
+  color: white;
+  margin: 0vh 1vw;
+}
+
+input::placeholder {
+  color : white;
+  font-size: 1.1vw;
+}
+
+input {
+  text-align: center;
+
+}
+
+.MuiOutlinedInput-input, .MuiOutlinedInput-input:focus {
+  height: 3vh !important;
+  padding: 0 0 !important;
+}
+
+.ag-center-cols-viewport {
+  overflow-x: hidden;
+}
+
+.slider {
+  animation: example 15s ease-in-out 0s infinite forwards;
+  position: relative;
+}
+
+@keyframes example {
+  0%   { left:70vw;}
+  100% { left:-70vw;}
+}
+
+.MuiSvgIcon-root {
+  fill: red;
+  color: red;
+  margin-left: 0.5vw;
+}
