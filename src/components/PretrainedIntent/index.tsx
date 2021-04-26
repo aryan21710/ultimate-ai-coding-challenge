@@ -4,7 +4,7 @@ import {  Box } from '@material-ui/core';
 import { ChatBotList } from './ChatBotList';
 
 
-export const ChatBotView:React.FC = () =>  (
+export const PretrainedIntent:React.FC = () =>  (
     <Box style={outerWrapper}>
         <ChatBotList/>
     </Box>

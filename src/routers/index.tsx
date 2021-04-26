@@ -2,17 +2,19 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Box } from '@material-ui/core';
 import { mainWrapper } from './styles';
-import { BasicLayout } from '../components/BasicLayout';
+import { CommonLayout } from '../components/CommonLayout';
 import { Home } from '../components/Home';
-import { ChatBotView } from '../components/ChatBotView';
+import { PretrainedIntent } from '../components/PretrainedIntent';
+import { GetStarted } from '../components/GetStarted';
 
-const AppRoutes:React.FC = () => (
+const AppRoutes: React.FC = () => (
     <BrowserRouter>
         <Box style={mainWrapper}>
-            <BasicLayout/>
+            <CommonLayout />
             <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/pretrainedintentview" component={ChatBotView} />
+                <Route exact path='/' component={Home} />
+                <Route exact path='/pretrainedintent' component={PretrainedIntent} />
+                <Route exact path='/getstarted' component={GetStarted} />
             </Switch>
         </Box>
     </BrowserRouter>

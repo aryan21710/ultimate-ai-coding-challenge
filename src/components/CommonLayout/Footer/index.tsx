@@ -1,7 +1,7 @@
 import React from 'react';
 import { outerWrapper, header } from './styles';
 import { Box, Typography } from '@material-ui/core';
-import { footerText } from '../../common/constants';
+import { footerText } from '../../../common/constants';
 
 const Footer:()=>JSX.Element = () => (
     <Box style={outerWrapper}>

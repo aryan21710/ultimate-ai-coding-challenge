@@ -35,10 +35,12 @@ export const innerWrapper:React.CSSProperties = {
 };
 
 export const importBtn:React.CSSProperties = {
-    padding: '0.5vh 0.5vw',
     position: 'absolute',
-    bottom: '1.5vh',
-    left: '40%'
+    top: '1vh',
+    right: '1vw',
+    padding: '0vh 0vw',
+    width: '1vw',
+    zIndex: 100,
 };
 
 export const title:React.CSSProperties = {

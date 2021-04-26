@@ -3,12 +3,14 @@ import { outerWrapper, innerWrapper, importBtn, title } from './styles';
 import {  Box, Typography, Button  } from '@material-ui/core';
 
 interface IProps {
+    // eslint-disable-next-line no-unused-vars
     setIsChatBotInfoVisible: (value: React.SetStateAction<boolean>) => void;
     expressionText: string[],
     reply: string,
 }
 
 const ChatBotInfo:React.FC<IProps>  = ({ setIsChatBotInfoVisible, expressionText, reply }) => {
+    // eslint-disable-next-line no-unused-vars
     const closeChatBotInfo: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void = () => setIsChatBotInfoVisible(false);
     return (
         <Box style={outerWrapper}>
@@ -19,7 +21,7 @@ const ChatBotInfo:React.FC<IProps>  = ({ setIsChatBotInfoVisible, expressionText
                 <Typography style={title} variant="h5">AI-Bot Reply</Typography>
 
                 <Typography variant="h6">{reply}</Typography>
-                <Button style={importBtn} variant='contained' color='secondary' onClick={closeChatBotInfo}>X</Button>
+                <Button style={importBtn}  onClick={closeChatBotInfo}>X</Button>
             </Box>
         </Box>
 

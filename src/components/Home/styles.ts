@@ -7,7 +7,7 @@ export const header:React.CSSProperties = {
 
 };
 
-export const outerWrapper:React.CSSProperties = {
+export const linkWrapper:React.CSSProperties = {
     display: 'flex',
     position: 'absolute',
     top: '50%',

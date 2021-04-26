@@ -1,9 +1,8 @@
 export const headerText = 'ULTIMATE-AI CHATBOT';
 export const homePageText = 'REACT HOOKS- TYPESCRIPT - MATERIAL UI  - WEBPACK - ESLINT ';
 export const footerText = '@Ultimate-AI Copyrighted by Aryan Sharma 04/2021. All Rights Reserved.';
-export const chatBotListHeader = '';
-export const getStartedHeader = 'AI-Bot Setup Wizard';
-
+export const setupWizarLink = 'AI-Bot Setup Wizard';
+export const getStartedLink = 'Get Started';
 
 export const listOfIntents = [
     {

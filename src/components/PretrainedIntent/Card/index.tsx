@@ -11,6 +11,7 @@ interface IProps {
   sampleExpr: string[];
   idx: number;
   reply: string,
+  // eslint-disable-next-line no-unused-vars
   onSelectBotHandler: (value: number)=>  (event: React.MouseEvent<HTMLButtonElement, MouseEvent>)=> void;
     botStatus: boolean
 }
@@ -27,7 +28,7 @@ export const Card: React.FC<IProps> = ({ intentName, description, sampleExpr, on
             <Typography variant='h5' style={initials}>
                 {intentName}
             </Typography>
-            <InfoIcon  style={info} onMouseOver={displayChatBotInfo}/>
+            <InfoIcon  style={info} onClick={displayChatBotInfo}/>
             {isChatBotInfoVisible && <ChatBotInfo setIsChatBotInfoVisible={setIsChatBotInfoVisible} expressionText={expressionText} reply={reply}/>}
             <Typography variant='h6' style={sampleInitials}>
                     Description:-

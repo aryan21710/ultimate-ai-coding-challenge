@@ -28,6 +28,7 @@ export const ChatBotList: React.FC = () => {
     const [allBotSelectStatus, SetAllBotSelectStatus] = useState<string>('Select All');
     const [botValue, SetBotValue] = useState<IState[]>(updatedListOfIntent);
 
+    // eslint-disable-next-line no-unused-vars
     const onSelectAllBotHandler: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void = () =>
         SetIsBotAllSelect((prevState) => !prevState);
 
@@ -64,21 +65,6 @@ export const ChatBotList: React.FC = () => {
             SetBotValue([...filteredBot]);
         }
     }, [isBotAllSelect]);
-
-
-    // useEffect(()=>{
-    //     const areAllBotSelected = botValue.filter((bot)=>!bot.botStatus).length;
-    //     const areAllBotUnSelected = botValue.filter((bot)=>bot.botStatus).length;
-    //     console.log(areAllBotSelected,':',areAllBotUnSelected);
-    //     if (areAllBotUnSelected===botValue.length) {
-    //         SetAllBotSelectStatus('UnSelect All Bot');
-    //         SetIsBotAllSelect(true);
-    //     } else if (areAllBotSelected===botValue.length) {
-    //         SetAllBotSelectStatus('Select All Bot');
-    //         SetIsBotAllSelect(false);
-    //     }
-
-    // }, [botValue]);
 
     return (
         <Box style={outerWrapper}>
