@@ -3,7 +3,7 @@ import { Box, Typography } from '@material-ui/core';
 import { header, linkWrapper, outerWrapper, innerWrapper } from './styles';
 import ArrowRightAltOutlinedIcon from '@material-ui/icons/ArrowRightAltOutlined';
 import { useHistory } from 'react-router-dom';
-import { setupWizarLink } from '../../common/constants';
+import { setupWizardLink } from '../../common/constants';
 
 export const GetStarted: React.FC = () => {
     const history = useHistory();
@@ -13,15 +13,13 @@ export const GetStarted: React.FC = () => {
     return (
         <Box style={outerWrapper}>
             <Box style={innerWrapper}>
-
                 <Box style={linkWrapper} onClick={onClickHandler}>
                     <Typography variant='h6' style={header}>
-                        {setupWizarLink}
+                        {setupWizardLink}
                     </Typography>
                     <ArrowRightAltOutlinedIcon style={{ fontSize: '3em' }} />
                 </Box>
             </Box>
-
         </Box>
     );
 };

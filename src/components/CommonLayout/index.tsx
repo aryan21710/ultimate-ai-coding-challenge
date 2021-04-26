@@ -3,11 +3,13 @@ import {  outerWrapper } from './styles';
 import {  Box } from '@material-ui/core';
 import Header from './Header';
 import Footer from './Footer';
+import { bkgVideoUrl } from '../../common/constants';
 
 export const CommonLayout:React.FC = () => (
     <Box style={outerWrapper}>
         <Header/>
-        <video width="100%" height="" loop muted autoPlay src="https://media.giphy.com/media/l49JGOWSDMAmOlSa4/giphy.mp4">
+        <video width="100%" height="" loop muted autoPlay>
+            <source src={bkgVideoUrl}/>
         </video>
         <Footer/>
     </Box>

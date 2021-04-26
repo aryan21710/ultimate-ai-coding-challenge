@@ -1,13 +1,11 @@
-
-export const header:React.CSSProperties = {
+export const header: React.CSSProperties = {
     color: 'white',
     wordSpacing: '0px',
     fontFamily: 'PT Sans Narrow',
-    letterSpacing: '2px',
-
+    letterSpacing: '2px'
 };
 
-export const linkWrapper:React.CSSProperties = {
+export const linkWrapper: React.CSSProperties = {
     display: 'flex',
     position: 'absolute',
     top: '50%',
@@ -16,14 +14,18 @@ export const linkWrapper:React.CSSProperties = {
     flexDirection: 'row',
     padding: '1vh 0vw',
     zIndex: 100,
-    cursor: 'pointer',
+    cursor: 'pointer'
 };
 
 export const text: React.CSSProperties = {
-    color: 'white',
+    color: 'white'
 };
 
-export const sliderWrapper: React.CSSProperties = {
+export const arrowIcon: React.CSSProperties = {
+    fontSize: '3em'
+};
+
+export const stackUsedAnimWrapper: React.CSSProperties = {
     background: 'rgba(255, 0, 0, 0.4)',
     height: '4vh',
     width: '100vw',

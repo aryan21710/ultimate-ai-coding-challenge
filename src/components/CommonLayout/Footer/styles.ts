@@ -1,4 +1,4 @@
-export const header:React.CSSProperties = {
+export const footer:React.CSSProperties = {
     color: 'rgba(255,255,255,0.8)',
     wordSpacing: '5px'
 };

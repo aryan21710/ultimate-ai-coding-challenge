@@ -19,7 +19,7 @@ export const selectedWrapper:React.CSSProperties = {
     width: '24vw',
     height: '40vh',
     margin: '2vh 0vw',
-    background: 'rgb(141, 153, 174,0.5)',
+    background: 'rgb(141, 153, 174,0.3)',
     borderRadius: '10px',
     overflow: 'auto',
     position: 'relative'
